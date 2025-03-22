@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(218, 244, 253);
+}
+
+.calculator {
+  background: rgb(55, 65, 84);
+  padding: 20px;
+  border-radius: 10px;
+}
+input {
+  width: 50px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  background: transparent;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border: none;
+  box-shadow: -8px -8px 10px rgba(0, 0, 0, 0.246),
+    5px 5px 10px rgba(255, 255, 255, 0.029);
+}
+.btn {
+  cursor: pointer;
+  transition: font-size 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+.btn:hover {
+  font-size: 16px;
+}
+.btn:active {
+  background: rgba(29, 34, 43, 0.478);
+}
+
+.evaluate {
+  width: 105px;
+}
+input[name="display"] {
+  width: 100%;
+  /* color: red; */
+  background-color: rgba(255, 235, 205, 0.041);
+  box-shadow: none;
+  border: 1px solid rgba(255, 255, 255, 0.131);
+  margin-bottom: 15px;
+  text-align: end;
+  cursor: default;
+}
+input[type="button"]:focus {
+  outline: none; /* Removes the focus highlight */
+}
+
+.clear,
+.delete{
+  color: red;
+}
+.operator{
+  color: #33ffd8;
+}
